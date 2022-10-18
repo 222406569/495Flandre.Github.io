@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CssReset/rest.css">
+    <link rel="stylesheet" href="../Environment/CssReset/rest.css">
+    <link rel="stylesheet" href="xiaomi.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        //窗口加载
+        window.onload=function(){
+            //获取轮播图对象
+            var pictureul=document.getElementsByClassName("imgscrollpanel");
+            //定义数组存储图片名关键字
+            var imgnamelist=["imgscrollleft","imgscrollmiddle","imgscrollright"];
+            //定义定时器变量
+            pictureul.onload=function(){
+                alert("it's work");
+            }
+            var timer=setInterval(function(){
+
+            },10000)
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topfirstarea"></div>
+    <!-- 显示内容区域 -->
+    <div class="w">
+
+
+        <div class="topleaderbar">
+            <!-- 导航条靠左部分 -->
+            <ul class="leaderbarleft">
+                <li><a href="#"><span>小米商城</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>MIUI</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>loT</span> </a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>云服务</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>天星数科</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a><span>有品</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>小爱开放平台</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>企业团购</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>资质证照</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>协议规则</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a class="downloadapp" href="#">
+                        <span>下载app</span>
+                        <!-- 下拉三角 -->
+                        <div class="triangle"></div>
+                        <div class="qrcode">
+                            <!-- 二维码图片 -->
+                            <img class="downloadpng" src="./img/download.png" alt="">
+                            <!-- 说明文字 -->
+                            <span>小米商城APP</span>
+                        </div>
+                    </a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>智能生活</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>Select Location</span></a></li>
+            </ul>
+            <!-- 导航条靠右部分 -->
+            <ul class="leaderbarright">
+                <li><a href="#"><span>登录</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>注册</span></a></li>
+                <li class="barleftdivision"></li>
+                <li><a href="#"><span>消息通知</span></a></li>
+            </ul>
+            <!-- 购物车图标 -->
+            <div class="shopcar">
+                <a class="shopcarhref" href="#">
+                    <span>购物车(0)</span>
+                    <div class="shopcaractive">
+                        <span class="carshoptips">购物车中还没有商品，赶紧选购吧！</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- 搜索和分区导航栏 -->
+        <div class="mainleaderbar fix">
+            <!-- 小米logo图片 -->
+            <div class="xiaomilogoimg">
+                <a href="#"><img class="milogoimg" src="./img/logomi.png" alt=""></a>
+            </div>
+            <!-- 主导航栏中间内容 -->
+            <ul class="mainleaderbarcontent">
+                <li class="hasdrop"><a href="#"><span>小米手机</span></a></li>
+                <li class="hasdrop"><a href="#"><span>Redmi红米</span></a></li>
+                <li class="hasdrop"><a href="#"><span>电视</span></a></li>
+                <li class="hasdrop"><a href="#"><span>笔记本</span></a></li>
+                <li class="hasdrop"><a href="#"><span>家电</span></a></li>
+                <li class="hasdrop"><a href="#"><span>路由器</span></a></li>
+                <li class="hasdrop"><a href="#"><span>智能硬件</span></a></li>
+                <li><a href="#"><span>服务</span></a></li>
+                <li><a href="#"><span>社区</span></a></li>
+                <!-- 导航栏下拉层 -->
+                <div class="mainleaderdrop"></div>
+            </ul>
+            <!-- 主导航栏搜索功能区域 -->
+            <div class="search">
+                <form action="#">
+                    <input class="fix" type="text" name="searchgoods" value="手机">
+                    <button name="searchgoods"></button>
+                </form>
+            </div>        
+        </div>
+
+
+        <!-- 商品信息检视和展示图滚动区 -->
+        <div class="showgoodsinfo">
+            <!-- 左侧菜单显示商品信息 -->
+            <ul class="goodsinfomenuitem">
+                <li class="goodsnameinfo"><a href="#">手机 电话卡</a></li>
+                <li class="goodsnameinfo"><a href="#">电视 盒子</a></li>
+                <li class="goodsnameinfo"><a href="#">笔记本 显示器</a></li>
+                <li class="goodsnameinfo"><a href="#">家电 插线板</a></li>
+                <li class="goodsnameinfo"><a href="#">出行 穿戴</a></li>
+                <li class="goodsnameinfo"><a href="#">智能 路由器</a></li>
+                <li class="goodsnameinfo"><a href="#">电源 配件</a></li>
+                <li class="goodsnameinfo"><a href="#">健康 儿童</a></li>
+                <li class="goodsnameinfo"><a href="#">耳机 音箱</a></li>
+                <li class="goodsnameinfo"><a href="#">生活 箱包</a></li>
+            </ul>
+            <div class="imgscrollpanel">
+                <a href="#" class="imgscrollleft">
+                    <img id="fleft" src="./img/imgscrollleft.jpg" alt="" class="leftimg">
+                </a>
+                <a href="#" class="imgscrollmiddle">
+                    <img id="fmiddle" src="./img/imgscrollmiddle.webp" alt="" class="middleimg">
+                </a>
+                <a href="#" class="imgscrollright">
+                    <img id="fright" src="./img/imgscrollright.webp" alt="" class="rightimg">
+                </a>
+            </div>
+            <!-- 切换轮播图的图片 -->
+            <div class="selectimg">
+                <a class="changeto" href="#fleft"></a>
+                <a class="changeto" href="#fmiddle"></a>
+                <a class="changeto" href="#fright"></a>
+            </div>
+        </div>
+
+        
+        <!-- 底层客服功能和广告区 -->
+        <div class="customeraddimg">
+            <div class="subcustomer"></div>
+            <div class="subaddleft">
+                <a href="#" class="addleft">
+                    <img src="./img/subaddleft.jpg" alt="" class="addimg">
+                </a>
+            </div>
+            <div class="subaddmiddle">
+                <a href="#" class="addmiddle">
+                    <img src="./img/subaddmiddle.jpg" alt="" class="addimg">
+                </a>
+            </div>
+            <div class="subaddright">
+                <a href="#" class="addright">
+                    <img src="./img/subaddright.png" alt="" class="addimg">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
